@@ -1,7 +1,8 @@
-package com.mouth.moj.judge.codesandbox;
+package com.mouth.mojcodesandboox;
 
-import com.mouth.moj.judge.codesandbox.model.ExecuteCodeReponse;
-import com.mouth.moj.judge.codesandbox.model.ExecuteCodeRequest;
+
+import com.mouth.mojcodesandboox.model.ExecuteCodeReponse;
+import com.mouth.mojcodesandboox.model.ExecuteCodeRequest;
 
 /**
  * @ClassName CodeSandbox
@@ -11,5 +12,5 @@ import com.mouth.moj.judge.codesandbox.model.ExecuteCodeRequest;
  */
 public interface CodeSandbox {
 
-    ExecuteCodeReponse exexuteCode(ExecuteCodeRequest executeCodeRequest);
+    ExecuteCodeReponse executeCode(ExecuteCodeRequest executeCodeRequest);
 }

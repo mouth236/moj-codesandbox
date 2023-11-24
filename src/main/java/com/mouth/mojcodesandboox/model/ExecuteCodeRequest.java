@@ -1,4 +1,4 @@
-package com.mouth.moj.judge.codesandbox.model;
+package com.mouth.mojcodesandboox.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

@@ -1,8 +1,23 @@
-package com.mouth.mojcodesandboox.unsafe;/**
-* @ClassName ReadFileError
-* @Description TODO
-* @date 2023/11/21 17:19
-* @Version 1.0
-*/
+package com.mouth.mojcodesandboox.unsafe;
+
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.List;
+
+/**
+ * @ClassName ReadFileError
+ * @Description 读取服务器文件（文件信息泄露）
+ * @date 2023/11/21 17:19
+ * @Version 1.0
+ */
 public class ReadFileError {
+    public static void main(String[] args) throws IOException {
+        String userDir = System.getProperty("user.dir");
+        String filePath = userDir + File.separator + "src/main/resources/application.yml";
+        List<String> allLines = Files.readAllLines(Paths.get(filePath));
+        System.out.println(String.join("\n",allLines));
+
+    }
 }

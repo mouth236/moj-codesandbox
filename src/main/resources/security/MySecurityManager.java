@@ -1,4 +1,3 @@
-package com.mouth.mojcodesandboox.security;
 
 import java.security.Permission;
 
